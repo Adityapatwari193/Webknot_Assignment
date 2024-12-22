@@ -5,12 +5,14 @@ This project is an assignment for the company **Webknot** by **Aditya Patwari**,
 ## Features
 
 1. **Event Creation and Management**: Users can create, update, and delete events.
-2. **User Authentication**: Secure login and registration functionality.
-3. **Responsive Design**: Optimized for various device sizes.
-4. **Real-time Updates**: Live updates for event information.
-5. **Search and Filter**: Easily find events based on search criteria.
-6. **Event Dashboard**: View upcoming and past events with details.
-7. **User Role Management**: Different access levels for regular users and administrators.
+2. **Attendee Creation**:Create Attendees,Manage Attendees and delete attendees and assign them to different events.
+3. **Task Management**:Create A Task associated with each event and manage the task deadlines,status.
+4. **User Authentication**: Secure login and registration functionality.
+5. **Responsive Design**: Optimized for various device sizes.
+6. **Real-time Updates**: Live updates for event information.
+8. **Event Dashboard**: View upcoming and past events with details.
+9. **User Role Management**: Different access levels for regular users and administrators.
+
 
 ## Technologies Used
 
@@ -18,14 +20,15 @@ This project is an assignment for the company **Webknot** by **Aditya Patwari**,
 - **Node.js**: JavaScript runtime for building the server.
 - **Express.js**: Backend framework for building RESTful APIs.
 - **MongoDB**: NoSQL database for storing event and user data.
-- **JWT (JSON Web Tokens)**: For user authentication and session management.
-- **bcrypt.js**: For hashing user passwords securely.
+- **Passport.js**:Middleware to facilitate login, register, logout .
+
 
 ### Frontend
 - **React.js**: Dynamic frontend with interactive components.
 - **Axios**: Used for making HTTP requests to the backend API.
 - **React Router**: For handling navigation between pages.
 - **Bootstrap**: For responsive design and styling of components.
+- **Redux**:To store the state of the User.
 
 ## Setup Instructions
 
@@ -50,14 +53,13 @@ Follow these steps to set up the project on your local system:
    npm install
    ```
 
-3. Set up the environment variables (you can create a `.env` file):
-   * `MONGO_URI`: The MongoDB connection string.
-   * `JWT_SECRET`: Secret key for signing JSON Web Tokens.
 
-4. Start the backend server:
+3. Start the backend server:
    ```bash
-   npm start
+   node app.js
    ```
+
+4. Backend running on `http://localhost:5000`.
 
 ### Frontend Setup
 
@@ -105,6 +107,40 @@ Follow these steps to set up the project on your local system:
 * **Endpoint**: `/api/events/:id`
   * **Method**: `DELETE`
   * **Description**: Deletes an event.
+ 
+### Attendee Management
+
+* **Endpoint**: `/api/attendees`
+  * **Method**: `POST`
+  * **Description**: Adds a new attendee to the system.
+    
+* **Endpoint**: `/api/attendees`
+  * **Method**: `GET`
+  * **Description**: Retrieves a list of all attendees.
+    
+* **Endpoint**: `/api/attendees/:id`
+  * **Method**: `DELETE`
+  * **Description**: Removes an attendee from the system.
+    
+* **Endpoint**: `/api/attendees/:eventId/assign/:attendeeId`
+  * **Method**: `POST` 
+  * **Description**: Assigns an attendee to a specific event.
+
+### Task Management
+
+* **Endpoint**: `/api/tasks`
+  * **Method**: `POST`
+  * **Description**: Creates a new task.
+    
+* **Endpoint**: `/api/tasks/:eventId`
+  * **Method**: `GET`
+  * **Description**: Retrieves all tasks for a specific event.
+    
+* **Endpoint**: `/api/tasks/:id/status`
+  * **Method**: `PATCH`
+  * **Description**: Updates the status of a specific task.
+ 
+  
 
 ## Folder Structure
 
