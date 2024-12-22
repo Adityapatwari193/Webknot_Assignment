@@ -145,20 +145,30 @@ Follow these steps to set up the project on your local system:
 ## Folder Structure
 
 ```
-root
-├── backend
-│   ├── controllers     # Event and Auth API logic
-│   ├── models         # Mongoose models (Event, User)
-│   ├── routes         # API routes for events and authentication
-│   ├── server.js      # Main backend entry point
-│   ├── .env          # Environment variables
-├── frontend
-│   ├── src
-│   │   ├── App.js    # Main React component
-│   │   ├── components # Reusable components (Header, EventList)
-│   │   ├── pages     # Pages for displaying events and user authentication
-│   │   ├── App.css   # Styles
-├── package.json      # Project dependencies
+backend/
+├── controllers/
+│   ├── authController.js
+│   ├── eventController.js
+│   ├── attendeeController.js
+│   ├── taskController.js
+├── models/
+│   ├── User.js
+│   ├── Event.js
+│   ├── Attendee.js
+│   ├── Task.js
+├── routes/
+│   ├── authRoutes.js
+│   ├── eventRoutes.js
+│   ├── attendeeRoutes.js
+│   ├── taskRoutes.js
+├── middlewares/
+│   ├── authMiddleware.js
+├── config/
+│   ├── db.js
+│   ├── passport.js
+├── .env
+├── server.js
+ 
 ```
 
 ## Screenshots
