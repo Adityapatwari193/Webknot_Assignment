@@ -91,7 +91,7 @@ Follow these steps to set up the project on your local system:
 
 * **Endpoint**: `/api/auth/login`
   * **Method**: `POST`
-  * **Description**: Logs in an existing user and returns a JWT.
+  * **Description**: Logs in an existing user .
 
 ### Event Management
 * **Endpoint**: `/api/events`
@@ -175,9 +175,9 @@ backend/
 
 ## Screenshots
 
-[Event List Screen]
-
-[Event Creation Screen]
+![Screenshot description](screenshots/image1.png)
+![Screenshot description](screenshots/image2.png)
+![Screenshot description](screenshots/images3.png)
 
 ## Contributing
 
