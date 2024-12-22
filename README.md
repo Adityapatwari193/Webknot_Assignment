@@ -55,7 +55,7 @@ Follow these steps to set up the project on your local system:
    npm install
    ```
 
-3. Create a .env file and replace MONGO_URI=mongodb://localhost:<your-port>/event-management
+3. Create a .env file and replace MONGO_URI=mongodb://localhost:{your-port}/event-management
 
 
 4. Start the backend server:
