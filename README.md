@@ -53,13 +53,15 @@ Follow these steps to set up the project on your local system:
    npm install
    ```
 
+3. Create a .env file and replace MONGO_URI=mongodb://localhost:<your-port>/event-management
 
-3. Start the backend server:
+
+4. Start the backend server:
    ```bash
    node app.js
    ```
 
-4. Backend running on `http://localhost:5000`.
+5. Backend running on `http://localhost:5000`.
 
 ### Frontend Setup
 
