@@ -2,6 +2,8 @@
 
 This project is an assignment for the company **Webknot** by **Aditya Patwari**, focusing on **Event Management** using the **MERN Stack** (MongoDB, Express, React, Node.js). The system allows users to create, update, and manage events through a user-friendly interface.
 
+# Link To Video Explaination - https://drive.google.com/file/d/1Jzdx32Dr-BDSpvWZBUuoF7-O7nrQ8aMM/view?usp=sharing
+
 ## Features
 
 1. **Event Creation and Management**: Users can create, update, and delete events.
