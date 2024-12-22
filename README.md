@@ -175,9 +175,9 @@ backend/
 
 ## Screenshots
 
-![Screenshot description](screenshots/image1.png)
-![Screenshot description](screenshots/image2.png)
-![Screenshot description](screenshots/images3.png)
+![Login Window](screenshots/image1.png)
+![DashBoard](screenshots/image2.png)
+![Manage Events Page](screenshots/image3.png)
 
 ## Contributing
 
