@@ -1,0 +1,51 @@
+
+.events-container {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f1f5f9;
+  }
+  
+  .events-container::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .events-container::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+  }
+  
+  .events-container::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 3px;
+  }
+  
+  .event-card {
+    min-width: 280px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .assign-button {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .assign-button:hover {
+    filter: brightness(110%);
+  }
+  
+  .success-message {
+    animation: slideIn 0.3s ease-out forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
