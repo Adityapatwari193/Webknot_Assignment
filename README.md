@@ -42,15 +42,18 @@ The project is organized into two main directories:
 cd ../Frontend
 npm install
 
-3.**Start the development servers**:
-**Backend**:
+3. **Start the development servers**:
 
-```bash
+   - **Backend**:
 
-cd ../Backend
-npm start
-Frontend:
+     ```bash
+     cd ../Backend
+     npm start
+     ```
 
-```bash
-cd ../Frontend
-npm start
+   - **Frontend**:
+
+     ```bash
+     cd ../Frontend
+     npm start
+     ```
